@@ -1,0 +1,26 @@
+.site-header {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  min-height: 80px;
+  margin-bottom: auto;
+
+  background-color: #eee;
+}
+
+.site-header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: $mobile-width-only) {
+  // code
+}
+
+@media (min-width: $tablet-width) {
+  // code
+}
+
+@media (min-width: $desktop-width) {
+  // code
+}

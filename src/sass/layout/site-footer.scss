@@ -1,0 +1,22 @@
+.site-footer {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  min-height: 40px;
+  margin-top: auto;
+
+  font-size: 14px;
+  background-color: #eee;
+}
+
+@media (max-width: $mobile-width-only) {
+  // code
+}
+
+@media (min-width: $tablet-width) {
+  // code
+}
+
+@media (min-width: $desktop-width) {
+  // code
+}

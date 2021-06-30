@@ -1,0 +1,33 @@
+.site-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+@media (max-width: $mobile-width-only) {
+  // code
+}
+
+@media (min-width: $tablet-width) {
+  .site-grid {
+    gap: 40px;
+  }
+
+  .container {
+    width: 83.3%;
+    max-width: $desktop-width;
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 80%;
+    padding: 24px 0;
+  }
+}
