@@ -5,5 +5,6 @@ import Lib from './core'
 import './modules/displayElem'
 import './modules/classes'
 import './modules/attributes'
+import './modules/events'
 
 export default Lib

@@ -18,6 +18,14 @@ Lib.prototype.init = function (selector) {
     return this // {} - empty object
   }
 
+  // it's need for Event Handlers if selector is Event.target
+  if (selector.tagName) {
+    this[0] = selector
+    this.length = 1
+
+    return this
+  }
+
   const elementsList = document.querySelectorAll(selector)
   this.length = elementsList.length
 

@@ -13,6 +13,23 @@ import Lib from './lib/lib'
 //   .toggleClass('active-border')
 
 // test - attributes
-Lib('.text')
-  .addAttribute('data-modal', 'data-js')
-  .deleteAttribute('data-js', 'data-modal')
+// Lib('.text')
+//   .addAttribute('data-modal', 'data-js')
+//   .deleteAttribute('data-js', 'data-modal')
+
+// test - events
+// function myLog(evt) {
+//   evt.preventDefault()
+//   console.log(evt.target)
+// }
+// Lib('button').on('click', myLog).off('click', myLog).click()
+
+// test - events
+const toggleClassHandler = function (evt) {
+  evt.preventDefault()
+
+  Lib('.text').toggleClass('active-border')
+  Lib(this).toggleClass('animation-scale')
+}
+
+Lib('button').onClick(toggleClassHandler)
