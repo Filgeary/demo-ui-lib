@@ -1,6 +1,7 @@
 /**
  * Create Lib Main Function
  * @param {string} selector
+ * @returns {Object}
  */
 const Lib = function (selector) {
   // eslint-disable-next-line new-cap
@@ -10,6 +11,7 @@ const Lib = function (selector) {
 /**
  * Create Init method
  * @param {string} selector
+ * @returns {Object}
  */
 Lib.prototype.init = function (selector) {
   if (!selector) {
