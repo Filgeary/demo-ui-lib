@@ -3,5 +3,33 @@
 // main Lib function
 import Lib from './lib/lib'
 
-// test
-Lib('.test').hideElem().showElem().toggleDisplay()
+// test - displayElem
+// Lib('.text').hideElem().showElem().toggleDisplay()
+
+// test - classes
+// Lib('.text')
+//   .addClass('bg-tomato', 'test')
+//   .removeClass('test', 'bg-tomato')
+//   .toggleClass('active-border')
+
+// test - attributes
+// Lib('.text')
+//   .addAttribute('data-modal', 'data-js')
+//   .deleteAttribute('data-js', 'data-modal')
+
+// test - events
+// function myLog(evt) {
+//   evt.preventDefault()
+//   console.log(evt.target)
+// }
+// Lib('button').on('click', myLog).off('click', myLog).click()
+
+// test - events
+const toggleClassHandler = function (evt) {
+  evt.preventDefault()
+
+  Lib('.text').toggleClass('active-border')
+  Lib(this).toggleClass('animation-scale')
+}
+
+Lib('button').onClick(toggleClassHandler)

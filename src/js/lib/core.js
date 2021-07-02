@@ -1,6 +1,7 @@
 /**
  * Create Lib Main Function
  * @param {string} selector
+ * @returns {Object}
  */
 const Lib = function (selector) {
   // eslint-disable-next-line new-cap
@@ -10,10 +11,19 @@ const Lib = function (selector) {
 /**
  * Create Init method
  * @param {string} selector
+ * @returns {Object}
  */
 Lib.prototype.init = function (selector) {
   if (!selector) {
     return this // {} - empty object
+  }
+
+  // it's need for Event Handlers if selector is Event.target
+  if (selector.tagName) {
+    this[0] = selector
+    this.length = 1
+
+    return this
   }
 
   const elementsList = document.querySelectorAll(selector)

@@ -37,5 +37,7 @@
   &:focus,
   &:active {
     background-color: $btn-primary-bg-hover;
+    border-bottom: 3px solid $btn-primary-border-bottom;
+    border-right: 3px solid $btn-primary-border-bottom;
   }
 }

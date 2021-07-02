@@ -28,5 +28,6 @@ $btn-border-color: lighten($btn-color, 20%);
 $btn-primary-color: hsl(0, 0%, 100%);
 $btn-primary-bg: hsl(225, 73%, 55%);
 $btn-primary-bg-hover: darken($btn-primary-bg, 7%);
+$btn-primary-border-bottom: rgb(240, 95, 11);
 
 $btn-disabled: hsl(0, 0%, 80%);
