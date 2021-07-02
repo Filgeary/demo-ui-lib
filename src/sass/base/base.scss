@@ -58,3 +58,7 @@ input[type='radio'].visually-hidden {
 .active-border {
   border: 2px dashed slateblue;
 }
+.animation-scale {
+  transform: scale(1.2);
+  transition: all 800ms;
+}
