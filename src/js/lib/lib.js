@@ -6,5 +6,6 @@ import './modules/displayElem'
 import './modules/classes'
 import './modules/attributes'
 import './modules/events'
+import './modules/actions'
 
 export default Lib
