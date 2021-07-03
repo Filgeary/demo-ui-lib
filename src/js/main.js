@@ -36,5 +36,8 @@ import Lib from './lib/lib'
 
 // test - actions
 // html
-console.log(Lib('.active-border').html('<a>ok</a>'))
-console.log(Lib('.active-border').html())
+// console.log(Lib('.active-border').html('<a>ok</a>'))
+// console.log(Lib('.active-border').html())
+
+// eq
+console.log(Lib('main p').eq(1).addClass('bg-tomato'))

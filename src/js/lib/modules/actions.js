@@ -23,3 +23,19 @@ Lib.prototype.html = function (template = '') {
   }
   return this
 }
+
+/**
+ * Create eq method - find Element by index
+ * @param {number} index
+ */
+Lib.prototype.eq = function (index) {
+  const temp = this[index]
+
+  for (let i = 0; i < this.length; i++) {
+    delete this[i]
+  }
+  this[0] = temp
+  this.length = 1
+
+  return this
+}
