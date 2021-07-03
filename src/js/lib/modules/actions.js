@@ -50,3 +50,35 @@ Lib.prototype.index = function () {
 
   return childrenList.findIndex(findMyIndex)
 }
+
+/**
+ * Create find method - find element after Lib('selector')
+ * @param {string} selector
+ */
+Lib.prototype.find = function (selector) {
+  let foundItemsCount = 0
+  let counter = 0
+  const copyObjThis = Object.assign({}, this)
+
+  for (let i = 0; i < copyObjThis.length; i++) {
+    const arr = copyObjThis[i].querySelectorAll(selector)
+
+    if (arr.length === 0) continue
+
+    for (let j = 0; j < arr.length; j++) {
+      this[counter] = arr[j]
+      counter++
+    }
+
+    foundItemsCount += arr.length
+  }
+  this.length = foundItemsCount
+
+  const objLength = Object.keys(this).length
+
+  for (; foundItemsCount < objLength; foundItemsCount++) {
+    delete this[foundItemsCount]
+  }
+
+  return this
+}
