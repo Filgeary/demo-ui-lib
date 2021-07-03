@@ -46,4 +46,7 @@ import Lib from './lib/lib'
 // console.log(Lib('html').index())
 
 // find
-console.log(Lib('div').eq(1).find('.active-border').addClass('bg-tomato'))
+// console.log(Lib('div').eq(1).find('.active-border').addClass('bg-tomato'))
+
+// closest
+console.log(Lib('.active-border').closest('.container').addClass('bg-tomato'))
