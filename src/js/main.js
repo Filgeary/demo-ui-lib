@@ -25,11 +25,31 @@ import Lib from './lib/lib'
 // Lib('button').on('click', myLog).off('click', myLog).click()
 
 // test - events
-const toggleClassHandler = function (evt) {
-  evt.preventDefault()
+// const toggleClassHandler = function (evt) {
+//   evt.preventDefault()
 
-  Lib('.text').toggleClass('active-border')
-  Lib(this).toggleClass('animation-scale')
-}
+//   Lib('.text').toggleClass('active-border')
+//   Lib(this).toggleClass('animation-scale')
+// }
 
-Lib('button').onClick(toggleClassHandler)
+// Lib('button').onClick(toggleClassHandler)
+
+// test - actions
+// html
+// console.log(Lib('.active-border').html('<a>ok</a>'))
+// console.log(Lib('.active-border').html())
+
+// eq
+// console.log(Lib('main p').eq(1).addClass('bg-tomato'))
+
+// index
+// console.log(Lib('html').index())
+
+// find
+// console.log(Lib('div').eq(1).find('.active-border').addClass('bg-tomato'))
+
+// closest
+// console.log(Lib('.active-border').closest('div').addClass('bg-tomato'))
+
+// siblings
+console.log(Lib('.active-border').siblings())
