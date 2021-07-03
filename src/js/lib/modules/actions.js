@@ -1,12 +1,5 @@
 import Lib from '../core'
 
-// html
-// eq
-// index
-// find
-// closest
-// siblings
-
 /**
  * Create html method
  * @param {string} template
@@ -102,6 +95,34 @@ Lib.prototype.closest = function (selector) {
 
   for (; counter < objLength; counter++) {
     delete this[counter]
+  }
+
+  return this
+}
+
+Lib.prototype.siblings = function () {
+  let foundItemsCount = 0
+  let counter = 0
+  const copyObjThis = Object.assign({}, this)
+
+  for (let i = 0; i < copyObjThis.length; i++) {
+    const arr = copyObjThis[i].parentNode.children
+
+    for (let j = 0; j < arr.length; j++) {
+      if (copyObjThis[i] === arr[j]) continue
+
+      this[counter] = arr[j]
+      counter++
+    }
+
+    foundItemsCount += arr.length - 1
+  }
+  this.length = foundItemsCount
+
+  const objLength = Object.keys(this).length
+
+  for (; foundItemsCount < objLength; foundItemsCount++) {
+    delete this[foundItemsCount]
   }
 
   return this
