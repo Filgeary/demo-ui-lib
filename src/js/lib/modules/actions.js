@@ -30,8 +30,9 @@ Lib.prototype.html = function (template = '') {
  */
 Lib.prototype.eq = function (index) {
   const temp = this[index]
+  const objLength = Object.keys(this).length
 
-  for (let i = 0; i < this.length; i++) {
+  for (let i = 0; i < objLength; i++) {
     delete this[i]
   }
   this[0] = temp
