@@ -40,4 +40,7 @@ import Lib from './lib/lib'
 // console.log(Lib('.active-border').html())
 
 // eq
-console.log(Lib('main p').eq(1).addClass('bg-tomato'))
+// console.log(Lib('main p').eq(1).addClass('bg-tomato'))
+
+// index
+console.log(Lib('html').index())

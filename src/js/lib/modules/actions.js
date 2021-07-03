@@ -39,3 +39,14 @@ Lib.prototype.eq = function (index) {
 
   return this
 }
+
+Lib.prototype.index = function () {
+  const parentElem = this[0].parentNode
+  const childrenList = [...parentElem.children]
+
+  const findMyIndex = (item) => {
+    return item === this[0]
+  }
+
+  return childrenList.findIndex(findMyIndex)
+}
