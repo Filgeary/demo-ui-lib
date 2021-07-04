@@ -52,4 +52,20 @@ import Lib from './lib/lib'
 // console.log(Lib('.active-border').closest('div').addClass('bg-tomato'))
 
 // siblings
-console.log(Lib('.active-border').siblings())
+// console.log(Lib('.active-border').siblings())
+
+// test - animate
+// fadeIn
+function showElement(evt) {
+  evt.preventDefault()
+  Lib('.hide-elem').showElem('block').fadeIn()
+}
+Lib('button').onClick(showElement)
+
+// fadeOut
+function hideElement(evt) {
+  evt.preventDefault()
+
+  Lib(this).fadeOut(500)
+}
+Lib('.text').onClick(hideElement)
