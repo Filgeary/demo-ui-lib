@@ -62,3 +62,9 @@ input[type='radio'].visually-hidden {
   transform: scale(1.2);
   transition: all 800ms;
 }
+.show-elem {
+  display: block;
+}
+.hide-elem {
+  display: none;
+}
