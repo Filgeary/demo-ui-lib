@@ -16,3 +16,7 @@
 - find (find element)
 - closest (find closest element)
 - siblings (get siblings)
+
+### Animation
+
+- fadeIn, fadeOut
