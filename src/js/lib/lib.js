@@ -7,5 +7,6 @@ import './modules/classes'
 import './modules/attributes'
 import './modules/events'
 import './modules/actions'
+import './modules/animate'
 
 export default Lib
