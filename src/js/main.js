@@ -72,11 +72,11 @@ import Lib from './lib/lib'
 
 // test - new styles
 Lib('.btn__success').onClick(() => {
-  Lib('.text-color-success').fadeOut()
+  Lib('.text-color-success').fadeToggle()
 })
 Lib('.btn__warning').onClick(() => {
-  Lib('.text-color-warning').fadeOut()
+  Lib('.text-color-warning').fadeToggle()
 })
 Lib('.btn__danger').onClick(() => {
-  Lib('.text-color-danger').fadeOut()
+  Lib('.text-color-danger').fadeToggle()
 })
