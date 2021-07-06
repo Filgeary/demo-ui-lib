@@ -37,7 +37,57 @@
   &:focus,
   &:active {
     background-color: $btn-primary-bg-hover;
-    border-bottom: 3px solid $btn-primary-border-bottom;
-    border-right: 3px solid $btn-primary-border-bottom;
+  }
+}
+
+// temp props
+.btn {
+  &__success {
+    color: #fff;
+    background-color: $success;
+    border-color: $success;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: darken($success, 10%);
+    }
+  }
+  &__danger {
+    color: #fff;
+    background-color: $danger;
+    border-color: $danger;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: darken($danger, 10%);
+    }
+  }
+  &__warning {
+    color: #fff;
+    background-color: $warning;
+    border-color: $warning;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: darken($warning, 10%);
+    }
+  }
+  &__dark {
+    color: #fff;
+    background-color: $dark;
+    border-color: $dark;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: darken($dark, 10%);
+    }
+  }
+  &__block {
+    display: block;
+    width: 100%;
   }
 }
