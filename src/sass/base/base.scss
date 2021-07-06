@@ -50,21 +50,3 @@ input[type='radio'].visually-hidden {
   border: 0;
   clip-path: inset(100%);
 }
-
-// test props
-.bg-tomato {
-  background-color: tomato;
-}
-.active-border {
-  border: 2px dashed slateblue;
-}
-.animation-scale {
-  transform: scale(1.2);
-  transition: all 800ms;
-}
-.show-elem {
-  display: block;
-}
-.hide-elem {
-  display: none;
-}

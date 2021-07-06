@@ -56,16 +56,27 @@ import Lib from './lib/lib'
 
 // test - animate
 // fadeIn
-function showElement(evt) {
-  evt.preventDefault()
-  Lib('.hide-elem').showElem('block').fadeIn()
-}
-Lib('button').onClick(showElement)
+// function showElement(evt) {
+//   evt.preventDefault()
+//   Lib('.hide-elem').showElem('block').fadeIn()
+// }
+// Lib('button').onClick(showElement)
 
 // fadeOut
-function hideElement(evt) {
-  evt.preventDefault()
+// function hideElement(evt) {
+//   evt.preventDefault()
 
-  Lib(this).fadeOut(500)
-}
-Lib('.text').onClick(hideElement)
+//   Lib(this).fadeOut(500)
+// }
+// Lib('.text').onClick(hideElement)
+
+// test - new styles
+Lib('.btn__success').onClick(() => {
+  Lib('.text-color-success').fadeOut()
+})
+Lib('.btn__warning').onClick(() => {
+  Lib('.text-color-warning').fadeOut()
+})
+Lib('.btn__danger').onClick(() => {
+  Lib('.text-color-danger').fadeOut()
+})
