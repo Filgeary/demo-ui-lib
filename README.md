@@ -19,4 +19,4 @@
 
 ### Animation
 
-- fadeIn, fadeOut
+- fadeIn, fadeOut, fadeToggle
