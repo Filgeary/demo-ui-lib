@@ -71,12 +71,15 @@ import Lib from './lib/lib'
 // Lib('.text').onClick(hideElement)
 
 // test - new styles
-Lib('.btn__success').onClick(() => {
-  Lib('.text-color-success').fadeToggle()
-})
-Lib('.btn__warning').onClick(() => {
-  Lib('.text-color-warning').fadeToggle()
-})
-Lib('.btn__danger').onClick(() => {
-  Lib('.text-color-danger').fadeToggle()
-})
+// Lib('.btn__success').onClick(() => {
+//   Lib('.text-color-success').fadeToggle()
+// })
+// Lib('.btn__warning').onClick(() => {
+//   Lib('.text-color-warning').fadeToggle()
+// })
+// Lib('.btn__danger').onClick(() => {
+//   Lib('.text-color-danger').fadeToggle()
+// })
+
+// test - dropdown
+Lib('.dropdown__toggle').dropdown()

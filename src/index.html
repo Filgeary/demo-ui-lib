@@ -29,29 +29,38 @@
     </header>
 
     <main class="site-main">
-      <div class="container">
-        <h2>main</h2>
+      <div class="container components">
+        <!-- Title -->
+        <section>
+          <h2>Components</h2>
+          <hr />
+        </section>
 
-        <p class="text text-color-success italic">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit
-        </p>
-        <p class="text text-color-warning" data-text>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
-          dicta consequatur ducimus perspiciatis vero minus
-        </p>
-        <p class="text text-color-danger">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
-          dicta consequatur ducimus perspiciatis vero minus
-        </p>
-        <p class="text text-color-primary mb-20">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
-          dicta consequatur ducimus perspiciatis vero minus
-        </p>
+        <!-- Dropdown -->
+        <section>
+          <h3>dropdown</h3>
 
-        <button class="btn btn__primary" type="button">Click me</button>
-        <button class="btn btn__success" type="button">Click me</button>
-        <button class="btn btn__warning" type="button">Click me</button>
-        <button class="btn btn__danger" type="button">Click me</button>
+          <div class="dropdown">
+            <button
+              class="btn btn__primary dropdown__toggle"
+              id="dropdownMenuButton"
+            >
+              Dropdown Menu
+            </button>
+
+            <ul class="dropdown__list" data-toggle-id="dropdownMenuButton">
+              <li class="dropdown__list-item">
+                <a href="#" class="dropdown__link">List Link #1</a>
+              </li>
+              <li class="dropdown__list-item">
+                <a href="#" class="dropdown__link">List Link #2</a>
+              </li>
+              <li class="dropdown__list-item">
+                <a href="#" class="dropdown__link">List Link #3</a>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
     </main>
 
