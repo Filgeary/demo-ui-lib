@@ -1,0 +1,25 @@
+.card {
+  break-inside: avoid-column;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+
+  &__img-wrapper img {
+    display: block;
+    object-fit: cover;
+  }
+  &__text {
+    margin-bottom: 32px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    margin-bottom: 60px;
+  }
+}

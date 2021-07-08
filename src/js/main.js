@@ -3,83 +3,11 @@
 // main Lib function
 import Lib from './lib/lib'
 
-// test - displayElem
-// Lib('.text').hideElem().showElem().toggleDisplay()
+// Components
+// ==================================================================
 
-// test - classes
-// Lib('.text')
-//   .addClass('bg-tomato', 'test')
-//   .removeClass('test', 'bg-tomato')
-//   .toggleClass('active-border')
-
-// test - attributes
-// Lib('.text')
-//   .addAttribute('data-modal', 'data-js')
-//   .deleteAttribute('data-js', 'data-modal')
-
-// test - events
-// function myLog(evt) {
-//   evt.preventDefault()
-//   console.log(evt.target)
-// }
-// Lib('button').on('click', myLog).off('click', myLog).click()
-
-// test - events
-// const toggleClassHandler = function (evt) {
-//   evt.preventDefault()
-
-//   Lib('.text').toggleClass('active-border')
-//   Lib(this).toggleClass('animation-scale')
-// }
-
-// Lib('button').onClick(toggleClassHandler)
-
-// test - actions
-// html
-// console.log(Lib('.active-border').html('<a>ok</a>'))
-// console.log(Lib('.active-border').html())
-
-// eq
-// console.log(Lib('main p').eq(1).addClass('bg-tomato'))
-
-// index
-// console.log(Lib('html').index())
-
-// find
-// console.log(Lib('div').eq(1).find('.active-border').addClass('bg-tomato'))
-
-// closest
-// console.log(Lib('.active-border').closest('div').addClass('bg-tomato'))
-
-// siblings
-// console.log(Lib('.active-border').siblings())
-
-// test - animate
-// fadeIn
-// function showElement(evt) {
-//   evt.preventDefault()
-//   Lib('.hide-elem').showElem('block').fadeIn()
-// }
-// Lib('button').onClick(showElement)
-
-// fadeOut
-// function hideElement(evt) {
-//   evt.preventDefault()
-
-//   Lib(this).fadeOut(500)
-// }
-// Lib('.text').onClick(hideElement)
-
-// test - new styles
-// Lib('.btn__success').onClick(() => {
-//   Lib('.text-color-success').fadeToggle()
-// })
-// Lib('.btn__warning').onClick(() => {
-//   Lib('.text-color-warning').fadeToggle()
-// })
-// Lib('.btn__danger').onClick(() => {
-//   Lib('.text-color-danger').fadeToggle()
-// })
-
-// test - dropdown
+// dropdown
 Lib('.dropdown__toggle').dropdown()
+
+// modal
+Lib('[data-toggle="modal"]').modal('data-target', '[data-close]')

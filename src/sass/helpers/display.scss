@@ -13,6 +13,18 @@
 .d-flex {
   display: flex;
 }
+.d-grid {
+  display: grid;
+}
+.gap-20 {
+  gap: 20px;
+}
+.gap-40 {
+  gap: 40px;
+}
+.g-template-col-1fr-1fr {
+  grid-template-columns: 1fr 1fr;
+}
 .f-centered {
   justify-content: center;
   align-items: center;

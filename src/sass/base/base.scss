@@ -20,13 +20,11 @@ body {
 a {
   color: $link-color;
   text-decoration: none;
-  border-bottom: 1px dashed $link-color;
 
   &:hover,
   &:focus,
   &:active {
     color: $link-color-hover;
-    border-bottom: none;
   }
 }
 

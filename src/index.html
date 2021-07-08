@@ -29,7 +29,7 @@
     </header>
 
     <main class="site-main">
-      <div class="container components">
+      <div class="container components-main-cont">
         <!-- Title -->
         <section>
           <h2>Components</h2>
@@ -61,6 +61,63 @@
             </ul>
           </div>
         </section>
+
+        <!-- Card -->
+        <section>
+          <h3>card</h3>
+
+          <div class="cards-main-cont">
+            <article class="card">
+              <div class="card__img-wrapper">
+                <img
+                  class="card__img"
+                  src="https://images.squarespace-cdn.com/content/v1/50730c37e4b03adec668905b/1568762603006-Z7M3PL78DT21EZVX1PPT/%C2%A9Mann_IMG_1844.jpg?format=800w"
+                  alt="photo"
+                />
+              </div>
+
+              <h3 class="card__title">Card Title #1</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                itaque placeat qui suscipit. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Officia itaque placeat qui
+                suscipit.
+              </p>
+              <a
+                href="#"
+                class="btn btn__primary card__link"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Show Modal #1
+              </a>
+            </article>
+
+            <article class="card">
+              <div class="card__img-wrapper">
+                <img
+                  class="card__img"
+                  src="https://media.gettyimages.com/photos/fisherman-with-cormorants-on-the-li-river-near-guilin-china-picture-id1048172428"
+                  alt="photo"
+                />
+              </div>
+
+              <h3 class="card__title">Card Title #2</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                itaque placeat qui suscipit.
+              </p>
+              <a
+                href="#"
+                class="btn btn__primary card__link"
+                data-toggle="modal"
+                data-target="#exampleModal2"
+              >
+                Show Modal #2
+              </a>
+            </article>
+          </div>
+        </section>
       </div>
     </main>
 
@@ -79,6 +136,53 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <section class="modal" id="exampleModal">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button type="button" class="modal__close" data-close>
+            <span>&times;</span>
+          </button>
+          <div class="modal__header">
+            <h2 class="modal__title">Modal Title #1</h2>
+          </div>
+          <div class="modal__body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            itaque placeat qui suscipit. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Officia itaque placeat qui suscipit.
+          </div>
+          <div class="modal__footer">
+            <button type="button" class="btn btn__danger" data-close>
+              Cancel
+            </button>
+            <button type="button" class="btn btn__success">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal" id="exampleModal2">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button type="button" class="modal__close" data-close>
+            <span>&times;</span>
+          </button>
+          <div class="modal__header">
+            <h2 class="modal__title">Modal Title #2</h2>
+          </div>
+          <div class="modal__body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
+          <div class="modal__footer">
+            <button type="button" class="btn btn__danger" data-close>
+              Cancel
+            </button>
+            <button type="button" class="btn btn__success">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="./bundle.js"></script>
   </body>
