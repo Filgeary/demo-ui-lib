@@ -1,0 +1,12 @@
+@media (min-width: $tablet-width) {
+  .cards-main-cont {
+    column-count: 2;
+    column-gap: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards-main-cont {
+    column-gap: 72px;
+  }
+}

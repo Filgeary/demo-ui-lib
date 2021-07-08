@@ -11,15 +11,19 @@
 @import 'base/base.scss';
 
 // Layout
-@import 'layout/grid.scss';
+@import 'layout/00_site-grid.scss';
 @import 'layout/site-header.scss';
 @import 'layout/site-main.scss';
 @import 'layout/site-footer.scss';
 
+@import 'layout/components-main-cont.scss';
+@import 'layout/cards-main-cont.scss';
+
 // Components
 @import 'components/btn.scss';
-@import 'components/components.scss';
 @import 'components/dropdown.scss';
+@import 'components/card.scss';
+@import 'components/modal.scss';
 
 // Pages
 

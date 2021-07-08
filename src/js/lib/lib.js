@@ -11,5 +11,6 @@ import './base/animate'
 
 // components
 import './components/dropdown'
+import './components/modal'
 
 export default Lib
