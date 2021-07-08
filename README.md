@@ -24,3 +24,5 @@
 ### Components
 
 - dropdown menu
+- card
+- modal
