@@ -2,3 +2,9 @@
   display: grid;
   gap: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .components-main-cont {
+    gap: 40px;
+  }
+}
