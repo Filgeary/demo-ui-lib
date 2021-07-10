@@ -26,3 +26,4 @@
 - dropdown menu
 - card
 - modal
+- create full Modal only in JS
