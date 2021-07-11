@@ -1,0 +1,66 @@
+.tabs {
+  margin: 0 auto;
+
+  &__list {
+    @include reset-list;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px 4px 0 0;
+
+    & li {
+      width: 100%;
+
+      &:not(:last-child) {
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 12px 24px;
+
+    &--active {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__content {
+    display: none;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+
+    & p::first-letter {
+      font-size: 30px;
+      color: tomato;
+    }
+
+    & hr {
+      width: 60%;
+      opacity: 0.5;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tabs {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tabs {
+    &__content {
+      padding: 28px;
+    }
+  }
+}
