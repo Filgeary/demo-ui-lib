@@ -27,3 +27,4 @@
 - card
 - modal
 - create full Modal only in JS
+- tabs
