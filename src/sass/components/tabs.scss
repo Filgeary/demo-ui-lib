@@ -1,0 +1,71 @@
+.tabs {
+  margin: 0 auto;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px 4px 0 0;
+  }
+
+  &__link {
+    width: 100%;
+    padding: 16px 32px;
+
+    color: $btn-color;
+    font: inherit;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    &--active {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__content {
+    display: none;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+
+    & p::first-letter {
+      font-size: 30px;
+      color: tomato;
+    }
+
+    & hr {
+      width: 60%;
+      opacity: 0.5;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tabs {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tabs {
+    &__content {
+      padding: 28px;
+    }
+  }
+}
