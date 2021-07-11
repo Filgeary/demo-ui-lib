@@ -55,3 +55,11 @@ Lib('#modal-2').onClick((evt) => {
     ],
   })
 })
+
+// tabs
+Lib('[data-tabs-list] .tabs__link').tabs({
+  tabsWrapperSelector: '.tabs',
+  tabActiveClass: 'tabs__link--active',
+  contentItemSelector: '.tabs__content',
+  contentActiveClass: 'tabs__content--active',
+})
