@@ -2,26 +2,31 @@
   margin: 0 auto;
 
   &__list {
-    @include reset-list;
-
     display: flex;
     justify-content: space-between;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px 4px 0 0;
-
-    & li {
-      width: 100%;
-
-      &:not(:last-child) {
-        border-right: 1px solid rgba(0, 0, 0, 0.2);
-      }
-    }
   }
 
   &__link {
-    display: block;
-    padding: 12px 24px;
+    width: 100%;
+    padding: 16px 32px;
+
+    color: $btn-color;
+    font: inherit;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+    }
 
     &--active {
       background-color: rgba(0, 0, 0, 0.1);
