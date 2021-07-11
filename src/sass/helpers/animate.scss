@@ -1,0 +1,13 @@
+// fadeIn
+.js-fadeIn {
+  animation: js-fadeIn 300ms;
+}
+
+@keyframes js-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
