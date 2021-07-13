@@ -2,32 +2,53 @@
   margin: 0 auto;
 
   &__header {
-    display: flex;
-    align-items: center;
     width: 100%;
-    padding: 0 32px;
+    margin: 0;
     border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
-    cursor: pointer;
 
     &--active {
-      background-color: hsl(0, 0%, 90%);
-
-      & .accordion__title {
+      & .accordion__button {
         color: $btn-primary-bg;
-      }
+        background-color: hsl(0, 0%, 90%);
 
-      & svg {
-        transform: rotate(-180deg);
-
-        & path {
-          fill: $btn-primary-bg;
+        &::after {
+          transform: rotate(-180deg);
         }
       }
     }
+  }
 
-    & svg {
+  &__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 40px;
+
+    color: $font-dark;
+    font: inherit;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+
+    transition: color 300ms;
+
+    &::after {
+      flex-shrink: 0;
+      content: '';
+      width: 25px;
+      height: 25px;
       margin-left: auto;
-      transition: transform 0.3s;
+
+      background-image: url(../../assets/img/arrow-down.svg);
+      background-repeat: no-repeat;
+      background-size: 25px;
+
+      transition: transform 300ms ease-in-out;
     }
   }
 
