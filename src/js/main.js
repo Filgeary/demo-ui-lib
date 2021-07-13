@@ -63,3 +63,6 @@ Lib('[data-tabs-list] .tabs__link').tabs({
   contentItemSelector: '.tabs__content',
   contentActiveClass: 'tabs__content--active',
 })
+
+// accordion
+Lib('.accordion__header').accordion()
