@@ -66,3 +66,14 @@ Lib('[data-tabs-list] .tabs__link').tabs({
 
 // accordion
 Lib('.accordion__header').accordion()
+
+// carousel
+Lib('.carousel').carousel({
+  inner: '.carousel__inner',
+  item: '.carousel__item',
+  indicator: '.carousel__indicators button',
+  indicatorSlideTo: 'data-slide-to',
+  controlNext: '[data-slide="next"]',
+  controlPrev: '[data-slide="prev"]',
+  activeClass: 'active',
+})
