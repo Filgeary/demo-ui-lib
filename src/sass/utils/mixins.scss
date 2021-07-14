@@ -5,6 +5,20 @@
   list-style: none;
 }
 
+@mixin reset-button {
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+
+  border: none;
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
 @mixin before-after {
   position: absolute;
 
