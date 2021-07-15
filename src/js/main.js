@@ -77,3 +77,30 @@ Lib('.carousel').carousel({
   controlPrev: '[data-slide="prev"]',
   activeClass: 'active',
 })
+
+// GET, POST requests
+// ===================================================
+
+// GET json
+Lib('[data-get-json]').onClick((evt) => {
+  evt.preventDefault()
+
+  Lib()
+    .get('https://jsonplaceholder.typicode.com/posts/1')
+    .then((json) => alert(JSON.stringify(json)))
+    .catch((err) => console.error(err))
+})
+
+// POST json
+Lib('[data-post-json]').onClick((evt) => {
+  evt.preventDefault()
+
+  const data = {
+    title: 'My POST request!',
+  }
+
+  Lib()
+    .post('https://jsonplaceholder.typicode.com/posts', data)
+    .then((json) => alert(JSON.stringify(json)))
+    .catch((err) => console.error(err))
+})

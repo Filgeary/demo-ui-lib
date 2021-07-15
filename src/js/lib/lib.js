@@ -16,4 +16,7 @@ import './components/tabs'
 import './components/accordion'
 import './components/carousel'
 
+// services
+import './services/api'
+
 export default Lib
