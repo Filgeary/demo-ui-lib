@@ -11,7 +11,7 @@
 
   &__link {
     width: 100%;
-    padding: 16px 32px;
+    padding: 16px;
 
     color: $btn-color;
     font: inherit;
@@ -59,6 +59,10 @@
 @media (min-width: $tablet-width) {
   .tabs {
     max-width: 80%;
+
+    &__link {
+      padding: 16px 32px;
+    }
   }
 }
 

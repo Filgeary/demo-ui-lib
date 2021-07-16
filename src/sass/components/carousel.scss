@@ -94,15 +94,15 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
+@media (min-width: $tablet-width) {
   .carousel {
-    display: none;
+    width: 700px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .carousel {
-    max-width: 80%;
+    width: 900px;
 
     &__inner {
       height: 600px;

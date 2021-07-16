@@ -31,15 +31,17 @@
 
     <!-- Main -->
     <main class="site-main">
-      <div class="container components-main-cont">
-        <!-- Title -->
-        <section>
+      <!-- Title -->
+      <section>
+        <div class="container">
           <h2>Components</h2>
           <hr />
-        </section>
+        </div>
+      </section>
 
-        <!-- Dropdown -->
-        <section>
+      <!-- Dropdown -->
+      <section>
+        <div class="container">
           <h3>dropdown</h3>
 
           <div class="dropdown">
@@ -49,7 +51,6 @@
             >
               Dropdown Menu
             </button>
-
             <ul class="dropdown__list" data-toggle-id="dropdownMenuButton">
               <li class="dropdown__list-item">
                 <a href="#" class="dropdown__link">List Link #1</a>
@@ -62,10 +63,12 @@
               </li>
             </ul>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Card -->
-        <section>
+      <!-- Card -->
+      <section>
+        <div class="container">
           <h3>card</h3>
 
           <div class="cards-main-cont">
@@ -77,7 +80,6 @@
                   alt="photo"
                 />
               </div>
-
               <h3 class="card__title">Card Title #1</h3>
               <p class="card__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
@@ -94,7 +96,6 @@
                 Show Modal #1
               </a>
             </article>
-
             <article class="card">
               <div class="card__img-wrapper">
                 <img
@@ -103,7 +104,6 @@
                   alt="photo"
                 />
               </div>
-
               <h3 class="card__title">Card Title #2</h3>
               <p class="card__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
@@ -119,10 +119,12 @@
               </a>
             </article>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Create Modal -->
-        <section>
+      <!-- Create Modal -->
+      <section>
+        <div class="container">
           <h3>create modal</h3>
 
           <div class="d-flex f-centered">
@@ -143,10 +145,12 @@
               Modal #2
             </button>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Tabs -->
-        <section>
+      <!-- Tabs -->
+      <section>
+        <div class="container">
           <h3>tabs</h3>
 
           <section class="tabs">
@@ -157,7 +161,6 @@
               <button type="button" class="tabs__link">Tab Item #2</button>
               <button type="button" class="tabs__link">Tab Item #3</button>
             </div>
-
             <div class="tabs__content tabs__content--active">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -197,10 +200,12 @@
               </p>
             </div>
           </section>
-        </section>
+        </div>
+      </section>
 
-        <!-- Accordion -->
-        <section>
+      <!-- Accordion -->
+      <section>
+        <div class="container">
           <h3>accordion</h3>
 
           <section class="accordion">
@@ -217,7 +222,6 @@
                 pariatur facilis culpa sit quae cumque harum.
               </p>
             </div>
-
             <h3 class="accordion__header">
               <button class="accordion__button" type="button">
                 Accordion Content Item Title #2
@@ -231,7 +235,6 @@
                 praesentium eos.
               </p>
             </div>
-
             <h3 class="accordion__header">
               <button class="accordion__button" type="button">
                 Accordion Content Item Title #3
@@ -246,81 +249,77 @@
               </p>
             </div>
           </section>
-        </section>
+        </div>
+      </section>
 
-        <!-- Carousel -->
-        <section style="overflow: hidden">
-          <h3>carousel</h3>
+      <!-- Carousel -->
+      <section class="carousel__main-cont" style="overflow: hidden">
+        <h3>carousel</h3>
 
-          <section id="carousel-1" class="carousel">
-            <!-- dots -->
-            <div class="carousel__indicators">
-              <button type="button" data-slide-to="0" class="active"></button>
-              <button type="button" data-slide-to="1"></button>
-              <button type="button" data-slide-to="2"></button>
+        <section id="carousel-1" class="carousel">
+          <!-- dots -->
+          <div class="carousel__indicators">
+            <button type="button" data-slide-to="0" class="active"></button>
+            <button type="button" data-slide-to="1"></button>
+            <button type="button" data-slide-to="2"></button>
+          </div>
+          <!-- content -->
+          <div class="carousel__inner">
+            <div class="carousel__item active">
+              <img
+                src="https://images.unsplash.com/photo-1586600822178-26dec0f653a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1378&q=80"
+                class="d-block w-100"
+                alt="#"
+              />
             </div>
-
-            <!-- content -->
-            <div class="carousel__inner">
-              <div class="carousel__item active">
-                <img
-                  src="https://images.unsplash.com/photo-1586600822178-26dec0f653a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1378&q=80"
-                  class="d-block w-100"
-                  alt="#"
-                />
-              </div>
-              <div class="carousel__item">
-                <img
-                  src="https://images.unsplash.com/photo-1467541473380-93479a5a3ffa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1423&q=80"
-                  class="d-block w-100"
-                  alt="#"
-                />
-              </div>
-              <div class="carousel__item">
-                <img
-                  src="https://images.unsplash.com/photo-1558517286-6b7b81953cb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
-                  class="d-block w-100"
-                  alt="#"
-                />
-              </div>
+            <div class="carousel__item">
+              <img
+                src="https://images.unsplash.com/photo-1467541473380-93479a5a3ffa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1423&q=80"
+                class="d-block w-100"
+                alt="#"
+              />
             </div>
-
-            <!-- controls -->
-            <button
-              class="carousel__control-prev"
-              type="button"
-              data-slide="prev"
-            >
-              <span class="carousel__control-prev--icon" title="Prev"
-                >&lt;</span
-              >
-            </button>
-            <button
-              class="carousel__control-next"
-              type="button"
-              data-slide="next"
-            >
-              <span class="carousel__control-next--icon" title="Next"
-                >&gt;</span
-              >
-            </button>
-          </section>
+            <div class="carousel__item">
+              <img
+                src="https://images.unsplash.com/photo-1558517286-6b7b81953cb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+                class="d-block w-100"
+                alt="#"
+              />
+            </div>
+          </div>
+          <!-- controls -->
+          <button
+            class="carousel__control-prev"
+            type="button"
+            data-slide="prev"
+          >
+            <span class="carousel__control-prev--icon" title="Prev">&lt;</span>
+          </button>
+          <button
+            class="carousel__control-next"
+            type="button"
+            data-slide="next"
+          >
+            <span class="carousel__control-next--icon" title="Next">&gt;</span>
+          </button>
         </section>
+      </section>
 
-        <!-- GET, POST requests -->
-        <section>
+      <!-- GET, POST requests -->
+      <section>
+        <div class="container">
           <h3>GET, POST requests</h3>
 
           <div>
-            <button type="button" class="btn btn__primary mr-20" data-get-json>
+            <button type="button" class="btn btn__primary mr-10" data-get-json>
               GET JSON
             </button>
             <button type="button" class="btn btn__dark" data-post-json>
               POST JSON
             </button>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -334,7 +333,7 @@
             href="https://github.com/Filgeary"
             target="_blank"
             rel="noopener noreferrer"
-            >JS code by Filgeary</a
+            >Code by Filgeary</a
           >
         </div>
       </div>
