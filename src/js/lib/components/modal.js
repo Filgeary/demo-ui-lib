@@ -35,6 +35,20 @@ Lib.prototype.modal = function (
       })
     })
 
+    // close Modal by Escape
+    function closeModalHandler(evt) {
+      if (evt.target && evt.code === 'Escape') {
+        targetElem.fadeOut(200)
+
+        if (targetElem && isModalCreated) {
+          setTimeout(() => {
+            targetElem[0].remove()
+          }, 200)
+        }
+      }
+    }
+    document.addEventListener('keydown', closeModalHandler)
+
     targetElem.onClick((evt) => {
       if (evt.target.classList.contains('modal')) {
         targetElem.fadeOut(200)
