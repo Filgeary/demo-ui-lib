@@ -5,12 +5,20 @@
   min-height: 80px;
   margin-bottom: auto;
 
-  background-color: #eee;
+  color: $font-light;
+  background: linear-gradient(
+    45deg,
+    hsl(348, 90%, 49%) 0%,
+    55%,
+    hsl(236, 86%, 54%) 100%
+  );
 }
 
 .site-header h1 {
   margin: 0;
   padding: 0;
+
+  text-shadow: 3px 3px 0 tomato;
 }
 
 @media (max-width: $mobile-width-only) {
