@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint ./src/js/",
     "test": "npm run lint",
-    "deploy": "npm run build && gulp cleanJunkFiles && gh-pages -d public",
+    "deploy": "npm run build && gh-pages -d public",
     "build": "gulp build && gulp prod-sass && gulp build-prod-js",
     "start": "gulp"
   },

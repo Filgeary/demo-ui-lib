@@ -112,10 +112,6 @@ gulp.task('cleanBuildFolder', () => {
   return del('public')
 })
 
-gulp.task('cleanJunkFiles', () => {
-  return del('public/**/*.map')
-})
-
 // Watch files
 function reload(done) {
   browsersync.reload()
