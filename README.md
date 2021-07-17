@@ -34,3 +34,8 @@
 ### Services
 
 - GET, POST json
+
+### Support
+
+- modern browsers
+- JSDoc comments (mainly types for params)
