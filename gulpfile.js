@@ -29,19 +29,19 @@ gulp.task('copy-html', () => {
 
 gulp.task('dev-sass', () => {
   return gulp
-    .src(PATH_SRC.entrySASS)
+    .src(PATH_SRC.entrySASS, { sourcemaps: true })
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest(PATH_PUBLIC))
+    .pipe(gulp.dest(PATH_PUBLIC, { sourcemaps: '.' }))
     .pipe(browsersync.stream())
 })
 
 gulp.task('prod-sass', () => {
   return gulp
-    .src(PATH_SRC.entrySASS)
+    .src(PATH_SRC.entrySASS, { sourcemaps: true })
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))
     .pipe(cleanCSS())
-    .pipe(gulp.dest(PATH_PUBLIC))
+    .pipe(gulp.dest(PATH_PUBLIC, { sourcemaps: '.' }))
 })
 
 gulp.task('build-js', () => {
